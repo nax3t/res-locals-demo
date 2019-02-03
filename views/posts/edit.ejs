@@ -1,0 +1,18 @@
+<h1>Edit <%= post.title %></h1>
+<div>
+	<form action="#">
+		<div>
+			<label>Title<br>
+				<input type="text" name="title" value="<%= post.title %>">
+			</label>
+		</div>
+		<div>
+			<label>Body<br>
+				<textarea name="body" id="" cols="30" rows="10"><%= post.body %></textarea>
+			</label>
+		</div>
+		<input type="submit">
+	</form>
+</div>
+
+<a href="/posts">Back</a>
